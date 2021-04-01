@@ -1,0 +1,26 @@
+.address-box {
+  font-style: normal;
+  margin-top: 20px;
+  padding-right: 12px;
+}
+
+.address-box-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-line .link {
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-email a,
+.footer-tel a {
+  color: var(--footer-adr-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
