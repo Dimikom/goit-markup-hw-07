@@ -5,7 +5,7 @@
   }
 }
 
-.our-activities-title {
+.our-activities__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -15,14 +15,14 @@
   margin-bottom: 50px;
 }
 
-.our-activities-list {
+.our-activities__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.our-activities-item {
+.our-activities__item {
   position: relative;
   z-index: -1;
   display: flex;
@@ -31,7 +31,7 @@
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 }
 
-.our-act-img-title {
+.our-activities__text {
   position: absolute;
   bottom: 0;
   right: 0;

@@ -28,8 +28,10 @@
   border-radius: 4px;
   background: transparent;
   color: var(--primary-white-color);
-  &:focus {
-    outline: none;
+  &:focus,
+  &:hover {
+    border: 1px solid var(--primary-white-color);
+    outline: var(--primary-white-color);
   }
 }
 
@@ -53,6 +55,10 @@
   transition-property: background-color;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-btn-color);
+  }
 }
 .send-icon {
   margin-left: 10px;

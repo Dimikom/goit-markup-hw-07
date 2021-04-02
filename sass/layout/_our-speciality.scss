@@ -1,20 +1,20 @@
-.our-spec .container {
+.our-spec {
   padding-top: var(--section-inner-padding);
   padding-bottom: var(--section-inner-padding);
 }
 
-.our-spec-list {
+.our-spec__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.our-spec-list__item {
+.our-spec__item {
   flex-basis: calc((100% / 4 - 30px));
   margin: 15px;
 }
 
-.our-spec-icon-box {
+.our-spec__iconbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@
   margin-bottom: 30px;
 }
 
-.our-spec-title {
+.our-spec__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -35,7 +35,7 @@
   margin-bottom: 10px;
 }
 
-.our-spec-desc {
+.our-spec__desc {
   color: var(--prime-text-color);
   font-weight: 400;
   font-size: 14px;

@@ -19,15 +19,14 @@
     <link href="css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Шапка сайта -->
     <header class="header container">
       <!-- Логотип WebStudio -->
       <a href="./index.html" lang="en" class="header-logo link">
         <span class="header-logo__web">Web</span>Studio</a
       >
-      <!-- Главная навигация -->
+      <!-- Main navigation -->
       <nav class="navigation">
-        <ul class="menu-nav link">
+        <ul class="menu-nav">
           <li class="menu-nav__item">
             <a href="./index.html">Студия</a>
           </li>
@@ -40,17 +39,17 @@
         </ul>
       </nav>
 
-      <ul class="header-mail-tel">
-        <li class="contact-email link">
-          <a class="contact-link link" href="mailto:info@devstudio.com">
+      <ul class="header-contacts">
+        <li class="header-contacts__item">
+          <a class="header-contacts__link" href="mailto:info@devstudio.com">
             <svg class="email-icon">
               <use href="./images/sprite.svg#envelope"></use>
             </svg>
             info@devstudio.com</a
           >
         </li>
-        <li class="contact-tel">
-          <a class="contact-link link" href="tel:+380961111111">
+        <li class="header-contacts__item">
+          <a class="header-contacts__link" href="tel:+380961111111">
             <svg class="phone-icon">
               <use href="./images/sprite.svg#smartphone"></use>
             </svg>
@@ -280,15 +279,15 @@
 
     <!-- Подвал страницы -->
     <footer class="footer">
-      <div class="footer-box container">
+      <div class="footer__box container">
         <div class="footer-adress-box">
           <!-- Логотип WebStudio -->
           <a href="./index.html" lang="en" class="footer-logo link">
-            <span class="footer-logo">Web</span>Studio</a
+            <span class="logo__web">Web</span>Studio</a
           >
           <address class="address-box">
-            <ul class="address-box-list list">
-              <li class="address-line">
+            <ul class="address-box__list list">
+              <li class="address-box__item">
                 <a
                   class="address-link link"
                   href="https://goo.gl/maps/EXt77zxLW6M5btKt6"
@@ -298,10 +297,10 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="footer-email link">
+              <li class="address-box__item link">
                 <a href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="footer-tel link">
+              <li class="address-box__item link">
                 <a href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>

@@ -1,15 +1,15 @@
-.social-list {
+.social__list {
   display: flex;
 }
 
-.social-item {
+.social__item {
   margin-right: 10px;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.social-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   }
 }
 
-.social-link-icon {
+.social__icon {
   fill: currentColor;
   &:hover,
   &:focus {
