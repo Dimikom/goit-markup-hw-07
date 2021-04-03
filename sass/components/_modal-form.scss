@@ -1,4 +1,4 @@
-.modal-title {
+.modal__title {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -12,18 +12,18 @@
   margin-top: 12px;
 }
 
-.modal-form-field:not(:first-child) {
+.modal-form__field:not(:first-child) {
   margin-top: 10px;
 }
 
-.modal-form-input-wrapper {
+.modal-form__input-wrapper {
   display: block;
   position: relative;
   top: 50%;
   margin-top: 4px;
 }
 
-.form-label {
+.modal-form__label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -31,7 +31,7 @@
   color: var(--prime-text-color);
 }
 
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -47,7 +47,7 @@
   }
 }
 
-.modal-form-icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -57,12 +57,12 @@
   fill: var(--title-text-color);
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .modal-form-input:focus + & {
+  .modal-form__input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-textarea {
+.modal-form__textarea {
   width: 100%;
   height: 120px;
   resize: none;
@@ -85,14 +85,14 @@
   }
 }
 
-.modal-term {
+.modal-form__term {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.modal-check-term::before {
+.modal-form__checkbox::before {
   display: block;
   content: '';
   width: 16px;
@@ -100,7 +100,7 @@
   margin-right: 8px;
   background-image: url('../images/svg/check-box.svg');
   /*---Стан чекбокса - CHECKED----*/
-  .modal-term-input:checked + & {
+  .modal-form__term-input:checked + & {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
     background-image: url('../images/svg/check-label.svg');
@@ -112,13 +112,13 @@
     box-shadow: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal-term-input:focus + & {
+  .modal-form__term-input:focus + & {
     box-shadow: 0 0 0 1px var(--accent-color);
     border-radius: 2px;
   }
 }
 
-.modal-check-term {
+.modal-form__checkbox {
   display: flex;
   align-items: center;
   text-align: center;
@@ -140,7 +140,7 @@
   }
 }
 
-.modal-send-btn {
+.modal-form__send-btn {
   display: flex;
   align-self: center;
   align-items: center;

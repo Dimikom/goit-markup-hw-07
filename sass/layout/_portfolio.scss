@@ -3,21 +3,20 @@
   padding-top: var(--section-inner-padding);
 }
 
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-list-item {
+.filter__item {
   display: inline-block;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
-.filter-list-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter-btn {
+.filter__button {
   display: flex;
   justify-content: space-between;
   font-family: inherit;
@@ -34,19 +33,16 @@
   transition-property: background-color, color, outline, box-shadow;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    outline: none; /* border: none; */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(196, 172, 172, 0.12);
+  }
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-  outline: none; /* border: none; */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(196, 172, 172, 0.12);
-}
-
 /*---Список карточек---*/
-/*---Карточка---*/
 .cards-list {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +51,7 @@
   padding-bottom: var(--section-inner-padding);
 }
 
-.cards-list-item {
+.cards-list__item {
   display: flex;
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   background: var(--primary-white-color);
@@ -66,21 +62,21 @@
   transition-property: box-shadow;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.cards-list-link:hover .cards-img-overlay,
-.cards-list-link:focus .cards-img-overlay {
-  transform: translateY(-100%);
-}
-
-.cards-image {
+.cards-list__image {
   position: relative;
   max-width: 100%;
   overflow: hidden;
 }
 
 /*---Синий оверлей с текстом---*/
-.cards-img-overlay {
+.cards-list__img-overlay {
   position: absolute;
   top: 100%;
   left: 0;
@@ -96,20 +92,18 @@
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 100ms;
-}
-
-.cards-list-item:hover,
-.cards-list-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  .cards-list__link:hover &,
+  .cards-list__link:focus & {
+    transform: translateY(-100%);
+  }
 }
 
 /*ТЕКСТ КАРТОЧКИ*/
-.project-description {
+.cards-list__description {
   padding: 20px 24px 20px 24px;
 }
 
-.cards-project-name {
+.cards-list__project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -118,7 +112,7 @@
   margin-bottom: 4px;
 }
 
-.cards-project-type {
+.cards-list__project-type {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
