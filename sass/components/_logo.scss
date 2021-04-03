@@ -7,7 +7,7 @@
 }
 
 .header-logo {
-  @include logo(var(--logo-font), 26px, 400, 1.19, 0.03em);
+  @include logo(var(--logo-font), 26px, 700, 1.19, 0.03em);
   color: rgba(0, 0, 0, 1);
   margin-right: 93px;
   & span {
