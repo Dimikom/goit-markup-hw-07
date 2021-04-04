@@ -1,11 +1,11 @@
-.our-activities {
+.activities {
   padding-bottom: var(--section-inner-padding);
   & .container {
     display: flex;
   }
 }
 
-.our-activities__title {
+.activities__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -15,14 +15,14 @@
   margin-bottom: 50px;
 }
 
-.our-activities__list {
+.activities__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.our-activities__item {
+.activities__item {
   position: relative;
   z-index: -1;
   display: flex;
@@ -31,7 +31,7 @@
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 }
 
-.our-activities__text {
+.activities__text {
   position: absolute;
   bottom: 0;
   right: 0;

@@ -15,10 +15,6 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
   & + & {
     margin-left: 50px;
   }
@@ -29,6 +25,10 @@
   transition-property: color;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navigation__link-current {
@@ -47,7 +47,7 @@
   }
 }
 
-.header-contacts {
+.header-contacts__list {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -79,14 +79,14 @@
   }
 }
 
-.email-icon {
+.header-contacts__icon-mail {
   width: 16px;
   height: 12px;
   fill: currentColor;
   margin-right: 10px;
 }
 
-.phone-icon {
+.header-contacts__icon-phone {
   width: 10px;
   height: 16px;
   fill: currentColor;

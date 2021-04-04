@@ -425,10 +425,6 @@ ol {
   letter-spacing: 0.02em;
 }
 
-.navigation__item:hover, .navigation__item:focus {
-  color: var(--accent-color);
-}
-
 .navigation__item + .navigation__item {
   margin-left: 50px;
 }
@@ -438,6 +434,10 @@ ol {
   transition-property: color;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--accent-color);
 }
 
 .navigation__link-current {
@@ -456,7 +456,7 @@ ol {
   background-color: var(--accent-color);
 }
 
-.header-contacts {
+.header-contacts__list {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -490,14 +490,14 @@ ol {
   color: var(--accent-color);
 }
 
-.email-icon {
+.header-contacts__icon-mail {
   width: 16px;
   height: 12px;
   fill: currentColor;
   margin-right: 10px;
 }
 
-.phone-icon {
+.header-contacts__icon-phone {
   width: 10px;
   height: 16px;
   fill: currentColor;
@@ -536,7 +536,7 @@ ol {
   margin-bottom: var(--card-set-gap);
 }
 
-.hero-btn {
+.hero__btn {
   font-family: inherit;
   color: var(--primary-white-color);
   background: var(--accent-color);
@@ -555,27 +555,27 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--accent-btn-color);
 }
 
-.our-spec {
+.speciality {
   padding-top: var(--section-inner-padding);
   padding-bottom: var(--section-inner-padding);
 }
 
-.our-spec__list {
+.speciality__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.our-spec__item {
+.speciality__item {
   flex-basis: calc((100% / 4 - 30px));
   margin: 15px;
 }
 
-.our-spec__iconbox {
+.speciality__iconbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -586,7 +586,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.our-spec__title {
+.speciality__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -596,7 +596,7 @@ ol {
   margin-bottom: 10px;
 }
 
-.our-spec__desc {
+.speciality__description {
   color: var(--prime-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -604,15 +604,15 @@ ol {
   letter-spacing: 0.03em;
 }
 
-.our-activities {
+.activities {
   padding-bottom: var(--section-inner-padding);
 }
 
-.our-activities .container {
+.activities .container {
   display: flex;
 }
 
-.our-activities__title {
+.activities__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -622,14 +622,14 @@ ol {
   margin-bottom: 50px;
 }
 
-.our-activities__list {
+.activities__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.our-activities__item {
+.activities__item {
   position: relative;
   z-index: -1;
   display: flex;
@@ -638,7 +638,7 @@ ol {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 }
 
-.our-activities__text {
+.activities__text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -686,14 +686,14 @@ ol {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__name-container {
+.team__box {
   margin: 0 auto;
   padding: 30px 32px;
   border-radius: 0 0 5px 5px;
   background-color: var(--primary-white-color);
 }
 
-.team__member-name {
+.team__name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -702,7 +702,7 @@ ol {
   letter-spacing: 0.03em;
 }
 
-.team__member-title {
+.team__profession {
   color: var(--prime-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -714,19 +714,19 @@ ol {
   /*отступ до списка соц.линков*/
 }
 
-.social__list {
+.team-socials__list {
   display: flex;
 }
 
-.social__item {
+.team-socials__item {
   margin-right: 10px;
 }
 
-.social__item:last-child {
+.team-socials__item:last-child {
   margin-right: 0;
 }
 
-.social__link {
+.team-socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -739,16 +739,16 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social__link:hover, .social__link:focus {
+.team-socials__link:hover, .team-socials__link:focus {
   background-color: var(--accent-color);
   color: #fff;
 }
 
-.social__icon {
+.team-social__icon {
   fill: currentColor;
 }
 
-.social__icon:hover, .social__icon:focus {
+.team-social__icon:hover, .team-social__icon:focus {
   transition-property: fill;
   transition-duration: var(--accent-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -815,7 +815,7 @@ ol {
   padding-bottom: 60px;
 }
 
-.footer__box {
+.footer__container {
   position: relative;
   display: flex;
   justify-content: space-between;

@@ -1,20 +1,20 @@
-.our-spec {
+.speciality {
   padding-top: var(--section-inner-padding);
   padding-bottom: var(--section-inner-padding);
 }
 
-.our-spec__list {
+.speciality__list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.our-spec__item {
+.speciality__item {
   flex-basis: calc((100% / 4 - 30px));
   margin: 15px;
 }
 
-.our-spec__iconbox {
+.speciality__iconbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@
   margin-bottom: 30px;
 }
 
-.our-spec__title {
+.speciality__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -35,7 +35,7 @@
   margin-bottom: 10px;
 }
 
-.our-spec__desc {
+.speciality__description {
   color: var(--prime-text-color);
   font-weight: 400;
   font-size: 14px;

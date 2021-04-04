@@ -18,6 +18,12 @@
 
 .address-box__item .link {
   @include address(var(--primary-white-color), 400, 14px, 1.71, 0.03em);
+
+  // color: var(--primary-white-color);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;
 }
 
 .address-box__item a {
