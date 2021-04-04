@@ -6,7 +6,7 @@
   letter-spacing: $ls;
 }
 
-.header-logo {
+.header__logo {
   @include logo(var(--logo-font), 26px, 700, 1.19, 0.03em);
   color: rgba(0, 0, 0, 1);
   margin-right: 93px;
@@ -15,7 +15,7 @@
   }
 }
 
-.footer-logo {
+.footer__logo {
   @include logo(var(--logo-font), 26px, 700, 1.19, 0.03em);
   color: var(--primary-white-color);
   & span {
